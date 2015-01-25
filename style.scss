@@ -1,0 +1,106 @@
+body {
+  background-color: white;
+}
+
+#awesome_video { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  overflow: hidden;
+  display: inline;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 1;
+}
+
+div.black {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+div.static {
+  position: fixed;
+  background-image: url("images/static.gif");
+  background-repeat: repeat;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  opacity: 0.1;
+}
+
+h1.title { 
+  position: relative;
+  float: both;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: lot_font;
+  z-index: 5;
+  text-shadow: 5px 5px 10px black;
+}
+
+p.money {
+  font-size: 10px;
+  color: black;
+  font-family: serif;
+  text-shadow: 5px 5px 10px black;
+  vertical-align: baseline;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+div.money {
+  position: fixed;
+  bottom: 0;
+  z-index: 6;
+}
+
+div.fb-share-button {
+  position: fixed;
+  display: inline-block;
+  z-index: 10;
+}
+
+div.twitter-share-button {
+  position: fixed; 
+  display: inline-block;
+  clear: left;
+  z-index: 9;
+}
+
+div.sticker {
+  position: relative;
+  z-index: 7;
+  background-image: url("images/colored.jpg");
+  background-position: center;
+  background-size: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  border-color: white;
+  border-style: solid;
+  width: 200px;
+  height: 200px;
+  color: red;
+  border-width: 0px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 1%;
+
+  &:hover {
+  background-image: url("images/3d.jpg");
+  background-size: 104%;
+  }
+}
+
+@font-face {
+    font-family: lot_font;
+    src: local(lot_font), url('fonts/LOT.otf') format('opentype');
+}
